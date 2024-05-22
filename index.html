@@ -1,0 +1,241 @@
+<<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Teatro - Cure delle MST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #264653;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            color: #2a9d8f;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .doctor-list, .appointment-form {
+            margin-top: 20px;
+        }
+        .doctor-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .doctor-item:hover {
+            transform: scale(1.05);
+        }
+        .doctor-item h3 {
+            margin: 0 0 10px 0;
+            color: #264653;
+        }
+        .contact-info {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .appointment-form form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+        .appointment-form label, .appointment-form input, .appointment-form select, .appointment-form button {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .appointment-form input, .appointment-form select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .appointment-form button {
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .appointment-form button:hover {
+            background-color: #21867a;
+        }
+        .success-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .doctor-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .doctor-item {
+            flex: 1 1 calc(25% - 20px);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .doctor-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .doctor-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clinica Teatro</h1>
+        <p>Specializzata nelle cure delle MST</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#medici">Medici</a>
+        <a href="#prenota">Prenota</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2 class="section-title">Benvenuti alla Clinica Teatro</h2>
+            <p>Il vostro centro di fiducia per la cura delle malattie sessualmente trasmissibili (MST). Offriamo un ambiente sicuro, discreto e professionale per la vostra salute sessuale.</p
+
+        <section id="chi-siamo">
+            <h2 class="section-title">Chi Siamo</h2>
+            <p>La Clinica Teatro è dedicata a fornire cure specialistiche per le MST con un team di medici altamente qualificati e con esperienza. La nostra missione è garantire il benessere e la salute sessuale dei nostri pazienti.</p>
+        </section>
+
+        <section id="servizi">
+            <h2 class="section-title">Servizi</h2>
+            <ul>
+                <li>Consultazioni mediche</li>
+                <li>Test diagnostici</li>
+                <li>Trattamenti personalizzati</li>
+                <li>Consulenze di prevenzione</li>
+            </ul>
+        </section>
+
+        <section id="medici">
+            <h2 class="section-title">Medici</h2>
+            <div class="doctor-list">
+                <div class="doctor-item">
+                    <h3>Dr. Kekko Pio</h3>
+                    <p>Specialità: Diagnosi e trattamento delle MST</p>
+                    <p>Disponibilità: Lunedì, Mercoledì, Venerdì</p>
+                </div>
+                <div class="doctor-item">
+                    <h3>Dr. Raffaele Teatro</h3>
+                    <p>Specialità: Consulenza e prevenzione delle MST</p>
+                    <p>Disponibilità: Martedì, Giovedì, Sabato</p>
+                </div>
+                <div class="doctor-item">
+                    <h3>Dott.ssa Jiuliana Vasquezza</h3>
+                    <p>Specialità: Trattamenti personalizzati per le MST</p>
+                    <p>Disponibilità: Lunedì, Giovedì</p>
+                </div>
+                <div class="doctor-item">
+                    <h3>Dr. Emanuele Basile</h3>
+                    <p>Specialità: Consulenza e diagnosi delle MST</p>
+                    <p>Disponibilità: Martedì, Venerdì</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prenota">
+            <h2 class="section-title">Prenota un Appuntamento</h2>
+            <div class="appointment-form">
+                <form onsubmit="return handleFormSubmit(event)">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="doctor">Medico preferito:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="kekko-pio">Dr. Kekko Pio</option>
+                        <option value="raffaele-teatro">Dr. Raffaele Teatro</option>
+                        <option value="jiuliana-vasquezza">Dott.ssa Jiuliana Vasquezza</option>
+                        <option value="emanuele-Basile">Dr. Emanuele Basile</option>
+                    </select>
+                    
+                    <label for="date">Data e ora preferite:</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                    
+                    <button type="submit">Prenota</button>
+                </form>
+            </div>
+        </section>
+
+                <section id="contatti">
+            <h2 class="section-title">Contatti</h2>
+            <div class="contact-info">
+                <p>Indirizzo: Via F.lli Maristi, 80014, Giugliano In Campania</p>
+                <p>Telefono: +39 351 0858 2822</p>
+                <p>Email: <a href="mailto:info@clinicteatro.it">info@clinicateatro.it</a></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="success-message" id="success-message" style="display: none;">
+        <h2>La tua prenotazione è stata effettuata con successo!</h2>
+        <p>Grazie per aver prenotato presso la Clinica Teatro. Ti aspettiamo all'appuntamento.</p>
+        <a href="index.html">Torna alla Home</a>
+    </div>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('#success-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
